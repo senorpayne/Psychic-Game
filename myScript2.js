@@ -27,6 +27,7 @@ document.onkeyup = function(event) {
 	if (letterToBeGuessed == userGuess) {
 		wins++;
 		console.log("You won!");
+		alert('Way to go! You\'ve guesesed corrrectly. You Won!');
 		guessesLeft = 9;
 		guessesSoFar = [];
 		letterToBeGuessed = alphabetLetters[Math.floor(Math.random() * alphabetLetters.length)];
@@ -39,6 +40,7 @@ document.onkeyup = function(event) {
 	if (guessesLeft == 0) {
 		losses++;
 		console.log("You lost!");
+		alert('You didn\'t guess the correct letter. You lost. Let\'s try again.');
 		guessesLeft = 9;
 		guessesSoFar = [];
 		letterToBeGuessed = alphabetLetters[Math.floor(Math.random() * alphabetLetters.length)];
